@@ -1,11 +1,10 @@
 from datetime import datetime
 
-from django.db.models import Avg
 from django.core.exceptions import ValidationError
-from rest_framework import serializers
 from django.contrib.auth import get_user_model
+from django.db.models import Avg
 from django.shortcuts import get_object_or_404
-
+from rest_framework import serializers
 from reviews.models import (
     UserCode,
     Comment,
@@ -15,7 +14,6 @@ from reviews.models import (
     Category,
     GenreTitle
 )
-
 
 User = get_user_model()
 
