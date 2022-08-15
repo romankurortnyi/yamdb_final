@@ -13,7 +13,6 @@ from .views import (
 )
 from .routers import CustomPostOnlyRouter
 
-
 app_name = 'api'
 
 auth_router = CustomPostOnlyRouter()
