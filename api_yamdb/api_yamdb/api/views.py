@@ -13,7 +13,6 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 
 from reviews.models import Review, UserCode, Title, Genre, Category, Comment
-
 from .serializers import (
     UserCodeSerializer,
     SignUpSerializer,
@@ -32,7 +31,6 @@ from .permissions import (
 )
 from .filters import TitleFilter
 from .mixins import CreateListDestroyViewSet
-
 
 User = get_user_model()
 
