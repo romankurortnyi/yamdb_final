@@ -10,13 +10,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', default='testkey')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ALLOWED_HOSTS = [
-    '130.193.54.102',
-    'localhost',
-    '127.0.0.1',
-    'zonayatube.servepics.com',
-    '*',
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
