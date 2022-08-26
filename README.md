@@ -1,5 +1,5 @@
 ![example workflow](https://github.com/romankurortnyi/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
-# API YaMDb
+# API YaMDb (http://zonayatube.servepics.com)
 
 ## _API интернет-сервиса YaMDB для хранения рецензий на произведения_
 
@@ -71,8 +71,6 @@ docker-compose exec web python manage.py collectstatic --no-input
 в базу данных через админку.
 
 Резервную копию базы данных можно создать командой
-```
-docker-compose exec web python manage.py dumpdata > fixtures.json 
 ```
 
 ### Остановка контейнеров
