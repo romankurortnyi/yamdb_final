@@ -66,7 +66,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролем
           script: |
-            sudo docker-compose stop
+          sudo docker-compose stop
           sudo docker system prune -f
           touch .env
           echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
