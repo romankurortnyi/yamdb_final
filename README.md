@@ -72,7 +72,11 @@ docker-compose exec web python manage.py collectstatic --no-input
 
 Создаем дамп базы данных
 ```
-docker-compose exec web python manage.py dumpdata > dumpPostrgeSQL.json 
+docker-compose exec web python manage.py dumpdata > fixtures.json  
+
+Создаем дамп базы данных
+```
+docker-compose run --rm web python manage.py loaddata fixtures.json
 
 ### Остановка контейнеров
 
