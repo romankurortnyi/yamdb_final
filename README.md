@@ -70,8 +70,9 @@ docker-compose exec web python manage.py collectstatic --no-input
 Нужно зайти на на http://localhost/admin/, авторизоваться и внести записи 
 в базу данных через админку.
 
-Резервную копию базы данных можно создать командой
+Создаем дамп базы данных
 ```
+docker-compose exec web python manage.py dumpdata > dumpPostrgeSQL.json 
 
 ### Остановка контейнеров
 
